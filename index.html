@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>My weather-app</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="current-city" id="city"></h1>
+            <p class="current-details">
+              <strong><span id="description"></span></strong>
+              <br />
+               <br />
+            <strong><span id="time"></span></strong>
+              <br />
+              Humidity: <strong id="humidity"></strong>
+              <br />
+              Wind: <strong id="wind-speed"></strong>
+            </p>
+            </div>
+         <div class="current-temperature">
+           <span id="icon"></span>
+              </span><span class="current-temperature-value" id="temperature"></span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      <div class="weather-forecast" id="forecast">
+      </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/MsibiD/" target="_blank"> Msibi Dieketseng</a>,
+        is
+        <a href="https://github.com/MsibiD?tab=repositories" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://app.netlify.com/teams/msibid/sites" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
